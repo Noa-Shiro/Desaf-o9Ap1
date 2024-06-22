@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("../img/fondo-ba.jpg");
+}
+header{
+    background-color: lightseagreen;
+    width: 100%;
+    height: 50px;
+}
+nav{
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+.bienvenida{
+    background-color: rgb(85, 216, 209);
+    text-align: center;
+}
+p{
+    background-color: rgb(96, 247, 196);
+    color: black;
+    
+}
+.modificarTama{
+    height: 500px;
+    z-index: 4;
+}
+
+.logo{
+    background-color: blue;
+    width: 150px;
+    height: 150px;
+    z-index: 7;
+}
+.circulo{
+    border-radius: 100%;
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    background-image: url("../img/logo.png");
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contenedor {
+    width: 1000px;
+    height: 1000px;
+    margin: 20px auto;
+    display: grid; /*separa los cuadrados para hacer grillas*/
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr; /*columnas en vertical*/
+    grid-template-rows: 350px 350px 350px; /*culumnas horizontales*/
+    /*column-gap: 20px; /*si o si con px, vertical*/
+    /*row-gap: 20px; /*si o si con px, horizontal*/
+    gap: 20px; /*da espacio en horizontal y vertical, ahorra el tiempo de row/column-gap*/
+    /*justify-items: center; alinea elementos de manera horizontal
+    align-items: center; alinea elementos de manera vertical*/
+}
+
+.caja {
+    background-color: lightseagreen;
+    color: rgb(179, 172, 172);
+    text-align: center;
+}
+.uno{
+    background-image: url("../img/orquideas-p.jpg");
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+}
+.dos{
+    background-image: url("../img/Girasol.jpg");
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+}
+.tres{
+    background-image: url("../img/crisantemos-c.jpg");
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+}
+.cuatro{
+    background-image: url("../img/rosas-c.jpg");
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+}
+.cinco{
+    background-image: url("../img/gypsophila.jpg");
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+}
+.seis{
+    background-image: url("../img/Statice.jpg");
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+}
+a{
+    background-color: rgb(62, 192, 186);
+    color:rgb(56, 53, 53);
+}
+footer{
+    background-color: lightseagreen;
+}
+@media (max-width: 600px){ 
+    .contenedor{
+        grid-template-columns: 1fr 1fr;
+        grid-row: 50px 100px 100px 100px 50px;
+    } /*para ajustar el tamaño de la pantalla*/
+}

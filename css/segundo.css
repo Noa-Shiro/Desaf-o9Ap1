@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("../img/fondo-ba.jpg");
+}
+header{
+    background-color: lightseagreen;
+    width: 100%;
+    height: 50px;
+}
+nav{
+    background-color: rgb(85, 216, 209);
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+p{
+    background-color: rgb(96, 247, 196);
+    color: black;
+}
+.logo{
+    background-color: blue;
+    width: 150px;
+    height: 150px;
+    z-index: 7;
+}
+.circulo{
+    border-radius: 100%;
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    background-image: url("../img/logo.png");
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+a{
+    background-color: rgb(62, 192, 186);
+    color:rgb(56, 53, 53);
+}
+footer{
+    background-color: lightseagreen;
+}
